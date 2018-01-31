@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Help : MonoBehaviour {
-
 	public void ShowHelp(bool show)
 	{
 		GetComponent<Animator>().SetBool("Show", show);
