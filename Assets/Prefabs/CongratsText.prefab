@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 224659950184135028}
   - component: {fileID: 222335534861193220}
   - component: {fileID: 114191544260820788}
+  - component: {fileID: 114836531990174790}
+  - component: {fileID: 114169005074419816}
   m_Layer: 5
   m_Name: CongratsText
   m_TagString: Untagged
@@ -28,6 +30,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &114169005074419816
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070662421752888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: fdc1f452-0910-403a-9cc6-21ca3fe91d0d
 --- !u!114 &114191544260820788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -63,6 +77,23 @@ MonoBehaviour:
   m_Text: 'Congratulations!
 
     You ended the game!'
+--- !u!114 &114836531990174790
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070662421752888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isConnected: 1
+  _guid: 
+  _referenceCollection:
+    _collection:
+    - {fileID: 1070662421752888}
+  _assetGuid: 0ecdc0ca3a5ae924588d68805600de84
 --- !u!222 &222335534861193220
 CanvasRenderer:
   m_ObjectHideFlags: 1

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4900964928125788}
   - component: {fileID: 198266261165006652}
   - component: {fileID: 199220477762473564}
+  - component: {fileID: 114487480436247958}
   m_Layer: 0
   m_Name: TeleportationEffect (1)
   m_TagString: Untagged
@@ -37,6 +38,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4617857524104050}
   - component: {fileID: 114241583940690232}
+  - component: {fileID: 114126098513078202}
+  - component: {fileID: 114687476139290576}
   m_Layer: 0
   m_Name: TeleportationEffect
   m_TagString: Untagged
@@ -54,6 +57,7 @@ GameObject:
   - component: {fileID: 4103888272403962}
   - component: {fileID: 198238249666943534}
   - component: {fileID: 199199652952521950}
+  - component: {fileID: 114023806073151326}
   m_Layer: 0
   m_Name: TeleportationEffect
   m_TagString: Untagged
@@ -102,6 +106,37 @@ Transform:
   m_Father: {fileID: 4617857524104050}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114023806073151326
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1945546004749386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: d6625904-9738-4664-99b0-2ff3e9f10729
+--- !u!114 &114126098513078202
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1428618662726432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isConnected: 1
+  _guid: 
+  _referenceCollection:
+    _collection:
+    - {fileID: 1428618662726432}
+    - {fileID: 1945546004749386}
+    - {fileID: 1043041519779174}
+  _assetGuid: ad83ff358936f9d4db72c9b5be6b6d75
 --- !u!114 &114241583940690232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,6 +151,30 @@ MonoBehaviour:
   yellow: {fileID: 1043041519779174}
   magenta: {fileID: 1945546004749386}
   lifeTime: 1
+--- !u!114 &114487480436247958
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1043041519779174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 8423d92b-dc60-4ede-8dd2-24f89b3872b3
+--- !u!114 &114687476139290576
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1428618662726432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: ab9d54b3-d301-4fb7-a187-b751f2b9db4a
 --- !u!198 &198238249666943534
 ParticleSystem:
   m_ObjectHideFlags: 1

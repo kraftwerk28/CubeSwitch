@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23320561384944700}
   - component: {fileID: 108485221363639018}
   - component: {fileID: 208250173278572762}
+  - component: {fileID: 114330613988166466}
   m_Layer: 0
   m_Name: Lighter
   m_TagString: Untagged
@@ -40,6 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4152407140880804}
   - component: {fileID: 114005164016794760}
+  - component: {fileID: 114744353736648540}
+  - component: {fileID: 114353811772482034}
   m_Layer: 0
   m_Name: ExtendedLighter
   m_TagString: Untagged
@@ -137,8 +140,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
-  m_Range: 10
+  m_Intensity: 30
+  m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -151,7 +154,7 @@ Light:
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: 0e5f153f2f9d947ba914bbf16a151626, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
@@ -176,6 +179,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lighter: {fileID: 1450772769313370}
   rotateSpeed: 0.05
+--- !u!114 &114330613988166466
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1450772769313370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: f9f7a1ac-6e1d-4a5a-b69e-80aa16181a8d
+--- !u!114 &114353811772482034
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1707280067143452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 3baa9201-b63c-4053-ba05-57ba06bdaf88
+--- !u!114 &114744353736648540
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1707280067143452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isConnected: 1
+  _guid: 
+  _referenceCollection:
+    _collection:
+    - {fileID: 1707280067143452}
+    - {fileID: 1450772769313370}
+  _assetGuid: f733f7207527bee4da99c5a4195749c4
 --- !u!208 &208250173278572762
 NavMeshObstacle:
   m_ObjectHideFlags: 1

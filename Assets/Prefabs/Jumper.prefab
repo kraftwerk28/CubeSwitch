@@ -27,6 +27,8 @@ GameObject:
   - component: {fileID: 108817832616638700}
   - component: {fileID: 199168387517636186}
   - component: {fileID: 198699580616497350}
+  - component: {fileID: 114208813187945178}
+  - component: {fileID: 114899338970260670}
   m_Layer: 0
   m_Name: Jumper
   m_TagString: Character
@@ -44,6 +46,7 @@ GameObject:
   - component: {fileID: 4383861873215168}
   - component: {fileID: 199146986976979312}
   - component: {fileID: 198198182634939290}
+  - component: {fileID: 114005220403171448}
   m_Layer: 0
   m_Name: ps
   m_TagString: Untagged
@@ -61,6 +64,7 @@ GameObject:
   - component: {fileID: 4113486698817160}
   - component: {fileID: 33453360228018232}
   - component: {fileID: 23064361433967306}
+  - component: {fileID: 114533271319070782}
   m_Layer: 0
   m_Name: Bottom
   m_TagString: Untagged
@@ -78,6 +82,7 @@ GameObject:
   - component: {fileID: 4682090233037802}
   - component: {fileID: 33703200290454972}
   - component: {fileID: 23117047273051946}
+  - component: {fileID: 114243968348381910}
   m_Layer: 0
   m_Name: Top
   m_TagString: Untagged
@@ -131,7 +136,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1163682068654826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 0.5, z: 1}
+  m_LocalPosition: {x: 1, y: 0.5, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4682090233037802}
@@ -276,7 +281,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 0, a: 1}
-  m_Intensity: 5
+  m_Intensity: 8
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -302,6 +307,62 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114005220403171448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368023222707948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 4f19619d-b4cd-49cc-8c71-f934139cb8fb
+--- !u!114 &114208813187945178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1163682068654826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isConnected: 1
+  _guid: 
+  _referenceCollection:
+    _collection:
+    - {fileID: 1163682068654826}
+    - {fileID: 1862561142218134}
+    - {fileID: 1625616227382392}
+    - {fileID: 1368023222707948}
+  _assetGuid: 092263046ebd316419b72b8c0e47744e
+--- !u!114 &114243968348381910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1862561142218134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: f8686924-d390-406e-a5f8-13175f0ad21e
+--- !u!114 &114533271319070782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1625616227382392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 31714459-0251-4011-b52c-8d95f9be83ad
 --- !u!114 &114805524031979578
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -314,8 +375,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JumpTr: {fileID: 198198182634939290}
+  bias: 7
   JumpVelocity: 1.5
   simulTime: 0.5
+--- !u!114 &114899338970260670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1163682068654826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 3f2d628f-7fea-4ed8-8d07-27f8312325f2
 --- !u!195 &195197331384279878
 NavMeshAgent:
   m_ObjectHideFlags: 1
@@ -325,7 +399,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: -334000983
   m_Radius: 0.7
-  m_Speed: 5
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 0
@@ -335,7 +409,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 0.5
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 7
   m_ObstacleAvoidanceType: 4
 --- !u!198 &198198182634939290
 ParticleSystem:
@@ -397,7 +471,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 2027237974
+  randomSeed: 112685950
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -846,9 +920,9 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: -0.4, z: 0}
+    m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 90, y: 0, z: 0}
-    m_Scale: {x: 1.2, y: 1.2, z: 0.2}
+    m_Scale: {x: 1.2, y: 1.2, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -957,7 +1031,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 200
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -3758,7 +3832,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1107049167
+  randomSeed: 195164422
   InitialModule:
     serializedVersion: 3
     enabled: 1

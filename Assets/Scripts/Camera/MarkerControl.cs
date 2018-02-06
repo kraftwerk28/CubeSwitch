@@ -26,16 +26,7 @@ public class MarkerControl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            TransmitSwitch.SetActive(false);
-            Cubes[index].GetComponent<CubeInterface>().Selection(false);
-            if (index > Cubes.Length - 2) index = 0;
-            else index++;
-            Cubes[index].GetComponent<CubeInterface>().Selection(true);
-            if (index == 2)
-            {
-                TransmitSwitch.SetActive(true);
-            }
-            GetComponent<CameraNavigation>().ChangeTarget(Cubes[index].transform);
+            Switch();
         }
         if (!es.IsPointerOverGameObject() && Input.GetMouseButtonDown(0) && Physics.Raycast(_camera.ScreenPointToRay(Input.mousePosition), out RayHit))
         {
@@ -43,5 +34,18 @@ public class MarkerControl : MonoBehaviour
             Cubes[index].GetComponent<CubeInterface>().SetTarget(RayHit);
         }
 
+    }
+    public void Switch()
+    {
+        TransmitSwitch.SetActive(false);
+        Cubes[index].GetComponent<CubeInterface>().Selection(false);
+        if (index > Cubes.Length - 2) index = 0;
+        else index++;
+        Cubes[index].GetComponent<CubeInterface>().Selection(true);
+        if (index == 2)
+        {
+            TransmitSwitch.SetActive(true);
+        }
+        GetComponent<CameraNavigation>().ChangeTarget(Cubes[index].transform);
     }
 }

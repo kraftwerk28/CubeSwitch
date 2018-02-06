@@ -27,6 +27,8 @@ GameObject:
   - component: {fileID: 114641150360147652}
   - component: {fileID: 114335917696125378}
   - component: {fileID: 114285154437870000}
+  - component: {fileID: 114505515352034938}
+  - component: {fileID: 114299254428825092}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -101,8 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0abbc7c9336894a8e297ae650b73fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Canvas: {fileID: 0}
   moveSpeed: 5
-  Target: {fileID: 0}
 --- !u!114 &114285154437870000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,6 +131,18 @@ MonoBehaviour:
   blurIterations: 1
   glowIntensityInner: 0.4
   samples: 2
+--- !u!114 &114299254428825092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1801314101703058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 9908cb15-97eb-4872-8e0d-27b643d6df31
 --- !u!114 &114335917696125378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,6 +175,23 @@ MonoBehaviour:
   - {fileID: 0}
   es: {fileID: 0}
   marker: {fileID: 1781571707544940, guid: 753b223b6669da54ca5c04a78e88fec8, type: 2}
+--- !u!114 &114505515352034938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1801314101703058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isConnected: 1
+  _guid: 
+  _referenceCollection:
+    _collection:
+    - {fileID: 1801314101703058}
+  _assetGuid: 015ea4e345800034aa35293f8440d02d
 --- !u!114 &114641150360147652
 MonoBehaviour:
   m_ObjectHideFlags: 1

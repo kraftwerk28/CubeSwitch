@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 23326748784823888}
   - component: {fileID: 108411710695151756}
   - component: {fileID: 208666705485443894}
+  - component: {fileID: 114224786470063290}
+  - component: {fileID: 114174966267662188}
   m_Layer: 0
   m_Name: Lighter
   m_TagString: Untagged
@@ -107,8 +109,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
-  m_Range: 10
+  m_Intensity: 30
+  m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -133,6 +135,35 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114174966267662188
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1501437714233774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: dc165c8f-9cbc-4058-a5ec-794cf092c49f
+--- !u!114 &114224786470063290
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1501437714233774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isConnected: 1
+  _guid: 
+  _referenceCollection:
+    _collection:
+    - {fileID: 1501437714233774}
+  _assetGuid: 27e8f3eb357b23f449958c9c1b764f38
 --- !u!208 &208666705485443894
 NavMeshObstacle:
   m_ObjectHideFlags: 1

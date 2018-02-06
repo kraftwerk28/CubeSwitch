@@ -11,7 +11,6 @@ public class Transmitter_AI : MonoBehaviour, CubeInterface
     public GameObject TeleportationPrefab;
     private NavMeshPath Path;
 
-    private bool isSelected = false;
     private int defAgentID;
 
     void Start()
@@ -82,7 +81,6 @@ public class Transmitter_AI : MonoBehaviour, CubeInterface
     {
 
         GetComponent<Light>().enabled = enable;
-        isSelected = enable;
     }
     private int getRandom()
     {

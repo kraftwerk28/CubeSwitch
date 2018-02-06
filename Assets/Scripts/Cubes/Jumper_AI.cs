@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class Jumper_AI : MonoBehaviour, CubeInterface
 {
     public ParticleSystem JumpTr;
+    public float bias = 5;
     public float JumpVelocity = 1.8f;
     public float simulTime = 0.5f;
     public NavMeshAgent agent { get; set; }
@@ -43,7 +44,7 @@ public class Jumper_AI : MonoBehaviour, CubeInterface
             animator.SetBool("Down", false);
 
         Vector3 r = agent.velocity;
-        transform.eulerAngles = currentRot + new Vector3(r.z, 0, -r.x) * 3;
+        transform.eulerAngles = currentRot + new Vector3(r.z, 0, -r.x) * bias;
     }
 
     public void SetTarget(RaycastHit rayHit)

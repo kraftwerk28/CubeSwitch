@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 224054517802771996}
   - component: {fileID: 222268309889984558}
   - component: {fileID: 114907559644738120}
+  - component: {fileID: 114004355411243086}
   m_Layer: 5
   m_Name: Back2
   m_TagString: Untagged
@@ -36,6 +37,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224879380382538754}
+  - component: {fileID: 114810701105632744}
+  - component: {fileID: 114307360691495886}
   m_Layer: 5
   m_Name: Button-cubed
   m_TagString: Untagged
@@ -55,6 +58,7 @@ GameObject:
   - component: {fileID: 114644607750734198}
   - component: {fileID: 114580671869705448}
   - component: {fileID: 95779548408243594}
+  - component: {fileID: 114507248091403944}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -72,6 +76,7 @@ GameObject:
   - component: {fileID: 224683251785550794}
   - component: {fileID: 222989056227444024}
   - component: {fileID: 114555650136848540}
+  - component: {fileID: 114009091261923602}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -89,6 +94,7 @@ GameObject:
   - component: {fileID: 224689119003373038}
   - component: {fileID: 222694506373169108}
   - component: {fileID: 114709341614163294}
+  - component: {fileID: 114476566518837204}
   m_Layer: 5
   m_Name: Back1
   m_TagString: Untagged
@@ -113,6 +119,66 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114004355411243086
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1036315047999232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: a8dbda35-da48-4496-b587-355b244fe6de
+--- !u!114 &114009091261923602
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1607986826301830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 88e96f40-7845-4aa8-8db4-b52c5e379dc0
+--- !u!114 &114307360691495886
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1052437101650508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 075d733c-df98-494d-a1e8-0e0f92943013
+--- !u!114 &114476566518837204
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1687355882594178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 58aa7fc6-8af6-4bdc-95c3-4b80e8d2bbe5
+--- !u!114 &114507248091403944
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1232322842410010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 112998890, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guid: 1cdc2d5d-6c6d-4952-9691-6fae5d3774b9
 --- !u!114 &114555650136848540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -241,6 +307,27 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114810701105632744
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1052437101650508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -605777808, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isConnected: 1
+  _guid: 
+  _referenceCollection:
+    _collection:
+    - {fileID: 1052437101650508}
+    - {fileID: 1687355882594178}
+    - {fileID: 1232322842410010}
+    - {fileID: 1607986826301830}
+    - {fileID: 1036315047999232}
+  _assetGuid: d6c39aaded2b2ad4598b947e6f060ee8
 --- !u!114 &114907559644738120
 MonoBehaviour:
   m_ObjectHideFlags: 1
