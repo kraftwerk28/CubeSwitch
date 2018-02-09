@@ -103,7 +103,6 @@ public class DoorButton : MonoBehaviour
             SetTable(currentWeight);
             wirePath.GetComponent<LineRenderer>().enabled = false;
             wirePath.GetComponent<AnimatedLineRender>().increasing = false;
-            Debug.Log("closed");
             if (triggeredDoor)
             {
                 triggeredDoor = false;

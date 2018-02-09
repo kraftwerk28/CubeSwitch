@@ -6787,12 +6787,12 @@ MonoBehaviour:
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
+  m_OverrideTileSize: 1
+  m_TileSize: 20
   m_OverrideVoxelSize: 1
   m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 1ad8b61adf19b524c95f72ec6c79a0a6, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 651adb30c4caad4428d565fb8f0ee2a4, type: 2}
 --- !u!114 &1748729163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6815,12 +6815,12 @@ MonoBehaviour:
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_OverrideTileSize: 1
+  m_TileSize: 20
+  m_OverrideVoxelSize: 1
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 3a90b5b8bfcadc14287902eb88243a40, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 53079c33cad9fdc4a92c191aea41e979, type: 2}
 --- !u!4 &1767185492 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4555956829593208, guid: 149879f7e53f7e841b25eb2fa153ac52,

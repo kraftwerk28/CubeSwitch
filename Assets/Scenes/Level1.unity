@@ -312,6 +312,17 @@ GameObject:
   m_PrefabParentObject: {fileID: 1120450300448040, guid: 149879f7e53f7e841b25eb2fa153ac52,
     type: 2}
   m_PrefabInternal: {fileID: 1597250536}
+--- !u!114 &65343273
+MonoBehaviour:
+  m_ObjectHideFlags: 10
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 65343272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1491221649, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &123550105
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,6 +3163,17 @@ GameObject:
   m_PrefabParentObject: {fileID: 1120450300448040, guid: 149879f7e53f7e841b25eb2fa153ac52,
     type: 2}
   m_PrefabInternal: {fileID: 1504552001}
+--- !u!114 &1116331832
+MonoBehaviour:
+  m_ObjectHideFlags: 10
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1116331831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1491221649, guid: 325c5b2a7434372429c2ca9d61dba58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1119140899
 Prefab:
   m_ObjectHideFlags: 0
@@ -5376,12 +5398,12 @@ MonoBehaviour:
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_OverrideTileSize: 1
+  m_TileSize: 20
+  m_OverrideVoxelSize: 1
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: ff3b22618e60df141b94f7ceb8c4f384, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: ee24f7dfd7527e948924d297f8722f0b, type: 2}
 --- !u!114 &1898442455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5404,12 +5426,12 @@ MonoBehaviour:
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
+  m_OverrideTileSize: 1
+  m_TileSize: 20
   m_OverrideVoxelSize: 1
   m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: ad40c5b942e6b764da9929a7649433a4, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 1edc1dd250d6e8b43bf7845ea4b455d0, type: 2}
 --- !u!1001 &1899010064
 Prefab:
   m_ObjectHideFlags: 0

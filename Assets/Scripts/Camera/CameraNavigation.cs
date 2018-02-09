@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraNavigation : MonoBehaviour
 {
     [HideInInspector]
-    public GameObject Canvas;
+    public GameObject _canvas;
 
     private Camera _camera;
     public float moveSpeed = 1f;
@@ -15,16 +15,16 @@ public class CameraNavigation : MonoBehaviour
 
     void Start()
     {
-        Canvas = GameObject.Find("Canvas");
+        _canvas = GameObject.Find("Canvas");
         _camera = GetComponent<Camera>();
         RaycastHit RayHit;
-        Canvas.SetActive(false);
+        _canvas.SetActive(false);
         if (Physics.Raycast(_camera.ScreenPointToRay(new Vector3(_camera.pixelWidth / 2, _camera.pixelHeight / 2)), out RayHit))
         {
             offset = transform.position - RayHit.point;
             Target = RayHit.transform;
         }
-        Canvas.SetActive(true);
+        _canvas.SetActive(true);
     }
 
     void Update()

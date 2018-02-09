@@ -9,12 +9,14 @@ public class Door : MonoBehaviour
     public GameObject[] Buttons;
     private int pressCount = 0;
 
+    private CameraNavigation _camera;
     private Animator animator;
     private NavMeshObstacle navMeshObstacle;
     private bool isOpened = false;
 
     void Start()
     {
+        _camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraNavigation>();
         navMeshObstacle = GetComponent<NavMeshObstacle>();
         animator = GetComponent<Animator>();
         if (Buttons.Length > 0)
@@ -88,11 +90,21 @@ public class Door : MonoBehaviour
         navMeshObstacle.enabled = false;
         animator.SetBool("Open", true);
         GetComponents<AudioSource>()[0].Play();
+        StartCoroutine(DoTargetCamera());
     }
     void DoClose()
     {
         navMeshObstacle.enabled = true;
         animator.SetBool("Open", false);
         GetComponents<AudioSource>()[1].Play();
+        StartCoroutine(DoTargetCamera());
+    }
+
+    IEnumerator DoTargetCamera()
+    {
+        Transform old = _camera.Target;
+        _camera.ChangeTarget(transform);
+        yield return new WaitForSeconds(1);
+        _camera.ChangeTarget(old);
     }
 }

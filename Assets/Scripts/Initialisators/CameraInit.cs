@@ -8,7 +8,7 @@ public class CameraInit : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        GetComponent<CameraNavigation>().Canvas = GameObject.Find("Canvas");
+        GetComponent<CameraNavigation>()._canvas = GameObject.Find("Canvas");
         Debug.Log("Setted!");
     }
 }
